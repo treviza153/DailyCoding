@@ -1,0 +1,14 @@
+version: '3'
+services:
+    socket_server:
+        container_name: socket_server
+        build: .
+        command: sh docker-start-debug.sh
+        volumes:
+            - .:/netapi_webui
+        networks:
+            - socket_net
+
+networks:
+    socket_net:
+        external: true

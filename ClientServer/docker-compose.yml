@@ -1,0 +1,24 @@
+version: '3'
+services:
+    
+    server:
+      container_name: socket_server
+      image: server_coding:Dockerfile
+      build: server/
+      networks:
+        - daily_coding
+      entrypoint: python3 server.py
+      restart: always
+    
+    client:
+      container_name: socket_client
+      image: client_coding:Dockerfile
+      build: client/
+      networks:
+        - daily_coding
+      entrypoint: python3 client.py
+      restart: always
+
+
+networks:
+    daily_coding:

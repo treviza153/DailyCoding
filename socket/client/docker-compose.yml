@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+    socket_client:
+        container_name: socket_client
+        build: .
+        command: sh docker-start-debug.sh
+        volumes:
+            - .:/socket_client
+        networks:
+            - socket_net
+        external_links:
+            - socket_server
+
+networks:
+    globonetworkapi_netapi_net:
+        external: true
