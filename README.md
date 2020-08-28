@@ -1,6 +1,6 @@
 # Telecom Daily Coding
 
-This is an effort of telecom team to improve our coding skills through exercises using algorithms and big o notation. All the codes are written in python3 notation.
+This is an effort to improve our coding skills through exercises using algorithms and big o notation. All the codes are written in python3 notation.
 
 ### Folders descriptions
 
